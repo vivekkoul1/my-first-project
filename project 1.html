@@ -1,0 +1,105 @@
+<!-- My 1st project in HTML 28 July 2021
+building items cart -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=++, initial-scale=1.0">
+    <title>VivekShoppingMart.com</title>
+</head>
+<body background="bimage5.jpg" style="background-size: 100% 100%;">
+    <h2 style="color: rgb(4, 0, 255); text-align: center; font-size: 50; font-style: italic;font-family:monospace; background-color: rgba(255, 255, 0, 0.74);"><ins>Items Cart</ins></h2>
+    <form>
+        
+        <fieldset style="background: rgba(252, 252, 252, 0.637); width: 570;">
+            <legend style="color: red;font-family: times;font-size: 20;background: rgba(251, 255, 0, 0.74);"><b>Customers details :</b></legend>
+            <br>
+            <label for="name" style="padding-right: 10;"> Name :</label>
+            <input id="name" placeholder="enter your name">
+            <label for="age" style="padding: 0 10 0 93;"> Age :</label>
+            <input id="age" placeholder="enter your age">
+            <br><br>
+            <label for="mobile" style="padding-right: 3;"> Mobile :</label>
+            <input type="text" maxlength="10" id="mobile" placeholder="enter your mobile number">
+            <label for="date" style="padding: 0 6 0 93;"> Date :</label>
+            <input type="date" id="date"> 
+            <br><br>
+            <label for="gender" style="padding-right: 4;"> Gender :</label>
+            <label for="male" style="font-size: 14; font-family:calibri";>Male</label><input type="radio" id="male" name="gender">
+            <label for="female" style="padding: 0 0 0 20; font-size: 14; font-family:calibri;">Female</label><input type="radio" id="female" name="gender">
+        </fieldset> 
+        <fieldset style="background: rgba(252, 252, 252, 0.637); width: 570;">
+            <legend style="color: red;font-family: times;font-size: 20;background: rgba(251, 255, 0, 0.74);"><b>Grocery items :</b></legend>
+            <br>
+            <label for="bread"><b>Bread: </b><img src="bread.jpg" height="35" style="padding: 0 100 0 110 "></label>
+            <input type="radio" id="brownbread" name="breadtype">
+            <input type="radio" id= "whitebread" name="breadtype" style="margin: 0 69 0 67;">
+            <input type="button" value="Remove" style="font-size: 12;">
+            <br>
+            <input type="button" style="margin: 0 0 0 135;" value="+1">
+            <input value="0" size="1" style="text-align: center;">
+            <input type="button" value="-1">
+            <label for="brownbread" style="font-family: calibri; font-size: 14; padding: 0 46 0 66;">Brown</label>
+            <label for="whitebread" style="font-family: calibri; font-size: 14;">White</label>            
+            <hr>
+            <label for="milk"><b>Amul milk:</b> <img src="milk.jpg" height="50" style="padding: 0 102 0 80 "></label>
+            <input type="radio" id="small" name="pack">
+            <input type="radio" id= "large" name="pack" style="margin: 0 69 0 67;">
+            <input type="button" value="Remove" style="font-size: 12;">
+            <br>
+            <input type="button" style="margin: 0 0 0 135;" value="+1">
+            <input value="0" size="1" style="text-align: center;"">
+            <input type="button" value="-1">
+            <label for="small" style="padding: 0 0 0 66;font-size: 14; font-family:calibri;">500ml</label>
+            <label for="large"style="padding: 0 0 0 46; font-family: calibri; font-size: 14;">1 liter</label>
+            <hr>
+            <label for="pizza"><b>Pizza:</b> <img src="pizza.jpg" height="40" style="padding: 0 0 0 115 "></label>
+            <label for="pizzasize" style="padding: 0 0 0 100;font-size: 14; font-family:calibri;">Size:</label>
+            <select id="pizzasize" name="pizza">
+                <option value="select">Select</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="button" value="Remove" style="margin: 0 0 0 71; font-size: 12;">
+            <br>
+            <input type="button" style="margin: 0 0 0 135;" value="+1">
+            <input value="0" size="1" style="text-align: center;">
+            <input type="button" value="-1">
+            <hr>
+            <label><b>Eggs: </b><img src="eggs.jpg" height="40" style="padding: 0 0 0 110 "></label>
+            <input type="radio" id= "whiteeggs" name="eggtype" style="margin: 0 0 0 110;">
+            <input type="radio" id= "browneggs" name="eggtype" style="margin: 0 0 0 70;">
+            <input type="button" value="Remove" style="margin: 0 0 0 68; font-size: 12;">
+            <input type="button" style="margin: 0 0 0 135;" value="+1">
+            <input value="0" size="1" style="text-align: center;">
+            <input type="button" value="-1">
+            <label for="whiteeggs" style="padding:0 0 0 55; font-size: 14; font-family:calibri;">White eggs</label>
+            <label for="browneggs" style="font-size: 14; font-family:calibri;padding:0 0 0 20;">Brown eggs</label>
+            <hr>
+            <br><br>
+            <center><input type="submit" style="font-size: 40; background: rgb(238, 255, 0);" value="Checkout"></center>
+            <br><center><input type="reset" style="font-size: 20; background: rgba(115, 116, 110, 0.39);" value="Reset"></center>
+            <br> <hr>
+            <p style="font-size: 30;font-family: calibri;">Couldn't find an item??
+            <a href="https://www.bigbasket.com/" target="_blank" style="font-size: 35; color: red; background: black;">CLICK HERE</a>
+            </p>
+        </fieldset>
+        <fieldset style="background: rgba(252, 252, 252, 0.637); width: 570;">
+            <legend style="color: red;font-family: times;font-size: 20;background: rgba(251, 255, 0, 0.74);"><b>Feedback :</b></legend>
+            <p><b>How was your experience at our shopping mart? 
+                Chose any of the following options that best describes your experience :</b></p>
+            <ul type="none">
+                <li><input type="checkbox">All items you were searching are available.</li>
+                <li><input type="checkbox">The items are in good & hygenic condition.</li>
+                <li><input type="checkbox">You were able to find items easily.</li>
+                <li><input type="checkbox">The website is very user friendly.</li>
+                <li><input type="checkbox">Overall the experiene is very pleasant.</li>
+            </ul>
+            <label for="feedback"><b>Any other comments:</b></label>
+            <textarea id="feedback" rows="5" cols="25" style="background:rgba(255, 255, 255, 0.637); align-self:;"></textarea>
+            &emsp;<input type="submit" value="submit">       
+        </fieldset>
+    </form>  
+</body>
+</html>
